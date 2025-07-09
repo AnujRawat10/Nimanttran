@@ -1,0 +1,293 @@
+/* template.css */
+
+/* Global Reset and Overflow Fix */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.wedding-template {
+  color: #333;
+  max-width: 100vw;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0 1rem;
+}
+
+.hero-section {
+  background: url('your-image-path.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 2rem;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 4rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.date {
+  background-color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  color: #ff5ec3;
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.countdown-section {
+  background: #ffe0fb;
+  padding: 3rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+.unit span {
+  font-size: 3rem;
+  font-weight: bold;
+  display: block;
+}
+
+.unit small {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.couple-section {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.couple-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  width: 100%;
+}
+
+.person {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.person h3 {
+  font-size: 1.2rem;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.person h4 {
+  font-size: 1.5rem;
+  color: #ff5ec3;
+}
+
+.photo {
+  height: 300px;
+  background-color: #ddd;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.groom-photo {
+  background-image: url('groom-image.jpg');
+}
+
+.bride-photo {
+  background-image: url('bride-image.jpg');
+}
+
+.quote-section {
+  padding: 3rem 0;
+  background: url('quote-bg.jpg') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+blockquote {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+blockquote cite {
+  display: block;
+  font-family: 'Dancing Script', cursive;
+  color: #ff5ec3;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.ceremony-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.ceremony-card {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  width: 280px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.gallery-section {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.gallery-img {
+  flex: 1 1 30%;
+  min-width: 180px;
+  height: 250px;
+  background-color: #ddd;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.venue-section {
+  padding: 3rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.map-placeholder {
+  height: 300px;
+  background-color: #eee;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.rsvp-section {
+  padding: 3rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.rsvp-section ul {
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.footer-tag {
+  font-weight: bold;
+  margin-top: 2rem;
+  color: #444;
+}
+
+.footer-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.music-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background-color: #fff;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 1000;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .couple-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ceremony-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-img {
+    width: 100%;
+  }
+
+  .person {
+    width: 100%;
+  }
+}
