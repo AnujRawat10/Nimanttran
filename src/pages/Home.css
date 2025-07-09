@@ -289,7 +289,7 @@ html, body {
 /* FAQ */
 .faq {
   padding: 2rem 1rem;
-  background: #111;
+  background: white;
   max-width: 800px;
   margin: 0 auto;
   color: #ccc;
