@@ -2,6 +2,8 @@
 
 import { useState } from "react"
 import "./contact.css"
+import MapSection from "../../component/MapSection" 
+import { FaInstagram, FaWhatsapp, FaYoutube , FaPhone } from 'react-icons/fa'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,11 +41,11 @@ const Contact = () => {
   }
 
   const handlePhoneClick = () => {
-    window.open("tel:+917000921608")
+    window.open("tel:+919205110208")
   }
 
   const handleEmailClick = () => {
-    window.open("mailto:business@amantran.com")
+    window.open("mailto:info@nimanttran.com")
   }
 
   return (
@@ -145,9 +147,9 @@ const Contact = () => {
           <div className="info-section">
             <div className="contact-info">
               <div className="phone-section">
-                <div className="phone-icon">📱</div>
-                <a href="tel:+917000921608" className="phone-number" onClick={handlePhoneClick}>
-                  +91 7000921608
+                <div className="phone-icon"><FaPhone /></div>
+                <a href="tel:+919205110208" className="phone-number" onClick={handlePhoneClick}>
+                  +91 9205110208
                 </a>
               </div>
 
@@ -169,13 +171,13 @@ const Contact = () => {
                 <h3 className="social-title">Connect with us</h3>
                 <div className="social-icons">
                   <a href="#" className="social-icon instagram">
-                    <span>📷</span>
+                    <FaInstagram />
                   </a>
                   <a href="#" className="social-icon whatsapp">
-                    <span>💬</span>
+                    <FaWhatsapp />
                   </a>
                   <a href="#" className="social-icon youtube">
-                    <span>📺</span>
+                    <FaYoutube />
                   </a>
                 </div>
               </div>
@@ -184,8 +186,10 @@ const Contact = () => {
         </div>
       </div>
 
+        {/* Map Section */} 
+        <MapSection />
       {/* Google Maps Section */}
-      <div className="map-section">
+      {/* <div className="map-section">
         <h2 className="map-title">Our Location</h2>
         <div className="map-container">
           <div className="map-content">
@@ -224,7 +228,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

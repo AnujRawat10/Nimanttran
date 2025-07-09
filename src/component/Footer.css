@@ -1,0 +1,356 @@
+/* Footer Container */
+.footer-container {
+  background-color: #000;
+  color: white;
+  width: 100%;
+  padding: 60px 0 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+}
+
+/* Main Footer Content */
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px 40px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Invite Section */
+.invite-section {
+  max-width: 350px;
+}
+
+.invite-text {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: transparent;
+  color: white;
+  border: 2px solid #666;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  max-width: 180px;
+}
+
+.explore-btn:hover {
+  background: white;
+  color: #000;
+  border-color: white;
+}
+
+/* Connect Section */
+.connect-section {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.contact-info {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.contact-name {
+  color: white;
+  font-weight: normal;
+}
+
+.contact-phone {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-phone:hover {
+  color: #ccc;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.social-icon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon.instagram {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-icon.whatsapp {
+  background: #25d366;
+}
+
+.social-icon.facebook {
+  background: #1877f2;
+}
+
+.social-icon.youtube {
+  background: #ff0000;
+}
+
+.social-icon.twitter {
+  background: #1da1f2;
+}
+
+/* Links Section */
+.links-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.links-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 25px 0;
+  background: #000;
+}
+
+.footer-bottom-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.project-link {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #c0392b;
+}
+
+/* WhatsApp Order Button */
+/* .whatsapp-order-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  background: #25d366;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.whatsapp-order-btn:hover {
+  background: #20b954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-icon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-icon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+} */
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .links-section {
+    grid-column: span 2;
+    justify-self: center;
+    max-width: 500px;
+  }
+
+  .invite-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 30px 30px 30px;
+  }
+
+  .invite-section {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .invite-text {
+    font-size: 1.8rem;
+  }
+
+  .links-section {
+    grid-column: span 1;
+    gap: 30px;
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .social-icons {
+    gap: 12px;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .social-icon svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 40px 0 0 0;
+  }
+
+  .footer-content {
+    padding: 0 20px 20px 20px;
+    gap: 30px;
+  }
+
+  .invite-text {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .links-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-bottom-content {
+    padding: 0 20px;
+  }
+
+  /* .whatsapp-order-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  } */
+
+  .explore-btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Utility Classes */
+.footer-container.compact {
+  padding: 40px 0 0 0;
+}
+
+.footer-container.compact .footer-content {
+  padding: 0 20px 20px 20px;
+}
+
+.footer-container.no-bottom-border .footer-bottom {
+  border-top: none;
+}

@@ -20,13 +20,14 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   background-color: #000;
-  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
 }
+
+
 
 .logo {
   display: flex;
@@ -58,7 +59,9 @@ html, body {
 /* Navigation */
 .nav {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
+  position: relative;
 }
 
 .nav a {
@@ -108,6 +111,27 @@ html, body {
   color: #ff69b4;
   margin-bottom: 2rem;
 }
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+  display: none; /* Hides by default */
+  z-index: 1001;
+}
+
+/* Show close button ONLY in mobile view */
+@media (max-width: 768px) {
+  .close-btn {
+    display: block;
+  }
+}
+
 
 .template-grid {
   display: flex;
@@ -376,3 +400,128 @@ html, body {
     justify-content: center;
   }
 }
+
+/* Dropdown (Desktop) */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-width: 160px;
+  z-index: 99;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+}
+
+.dropdown-content a:hover {
+  background-color: #222;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+/* Dropdown (Mobile fix) */
+@media (max-width: 768px) {
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background: none;
+    padding-left: 1rem;
+  }
+
+  .dropdown-content a {
+    padding: 0.5rem 0;
+    border-bottom: none;
+  }
+}
+
+/* Dropdown (Desktop) */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  min-width: 160px;
+  z-index: 99;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #222;
+}
+
+.dropdown-content a:hover {
+  background-color: #222;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Responsive dropdown toggle on mobile */
+@media (max-width: 768px) {
+  .dropdown-content {
+    display: none;
+    position: static;
+    background: none;
+    box-shadow: none;
+    padding-left: 1rem;
+  }
+
+  .dropdown.mobile-open .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    padding: 0.5rem 0;
+    border-bottom: none;
+  }
+}
+
+
+
+
+

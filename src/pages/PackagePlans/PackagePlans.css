@@ -1,0 +1,142 @@
+.package-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+  background-image: url("../../assets/PackagePlans.jpg");
+}
+
+.price-section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.packages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.package-card {
+  position: relative;
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.package-card h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.package-card .price {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+
+.package-card .price span {
+  font-size: 36px;
+}
+
+.package-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+  color: #555;
+}
+
+.package-card ul li {
+  margin: 8px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.package-card .whatsapp-btn {
+  margin: 20px 0;
+  text-align: center;
+  background-color: #25D366;
+  color:black;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.package-card .note {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.ribbon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #111;
+  color: black;
+  padding: 6px 12px;
+  font-size: 12px;
+  /* transform: rotate(45deg); */
+  transform-origin: top right;
+  z-index: 2;
+  color: rgb(242, 239, 242);
+}
+
+.ribbon.green {
+  background: #4CAF50;
+}
+
+.package-card.silver {
+  border-top: 6px solid #333;
+}
+
+.package-card.gold {
+  border-top: 6px solid goldenrod;
+}
+
+.package-card.diamond {
+  border-top: 6px solid #00bcd4;
+}
+
+@media screen and (max-width: 992px) {
+  .packages-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .package-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .package-card h3 {
+    font-size: 18px;
+  }
+  
+  .package-card .price {
+    font-size: 20px;
+  }
+  
+  .package-card ul li {
+    font-size: 14px;
+  }
+  
+  .package-card .note {
+    font-size: 12px;
+  }
+}
+
