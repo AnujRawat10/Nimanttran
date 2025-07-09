@@ -23,7 +23,7 @@ function Home() {
 
   return (
     <>
-      <header className="header">
+      {/* <header className="header">
         <div className="logo">
           <img src="/logo.png" alt="Logo" className="logo-img" />
           <div className="logo-text">
@@ -44,8 +44,7 @@ function Home() {
           <a href="/about">About</a>
           <a href="/contact">Contact</a>
         </nav>
-      </header>
-
+      </header> */}
       <div className="home">
         {/* Hero Section */}
         <section className="hero" data-aos="fade-up">
