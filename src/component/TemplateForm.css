@@ -1,0 +1,72 @@
+/* TemplateForm.css */
+
+.template-form {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fdf6fb;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.template-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #cc2b7c;
+}
+
+.template-form input,
+.template-form textarea,
+.template-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.template-form input:focus,
+.template-form textarea:focus,
+.template-form select:focus {
+  border-color: #cc2b7c;
+  outline: none;
+}
+
+.template-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.template-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.template-form button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #cc2b7c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.template-form button:hover {
+  background-color: #b1246d;
+}
+
+@media (max-width: 600px) {
+  .template-form {
+    padding: 1.5rem;
+  }
+}

@@ -1,6 +1,7 @@
-// template.jsx
-import  { useEffect, useRef, useState } from "react";
-import "./template.css";
+// Template.jsx
+import { useEffect, useRef, useState } from "react";
+import "./Template.css";
+import MapSection from "../component/MapSection";
 
 const Template = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -66,13 +67,13 @@ const Template = () => {
             <h3>THE GROOM</h3>
             <h4>Ryan</h4>
             <p>What can I say, she is amazing... She is my forever.</p>
-            <div className="photo groom-photo"/>
+            <div className="photo groom-photo" />
           </div>
           <div className="person bride">
             <h3>THE BRIDE</h3>
             <h4>Emily</h4>
             <p>I realized how much I miss him. I never wanted to be without him again!</p>
-            <div className="photo bride-photo"/>
+            <div className="photo bride-photo" />
           </div>
         </div>
       </section>
@@ -108,18 +109,30 @@ const Template = () => {
       <section className="gallery-section">
         <h2>OUR LOVELY MOMENTS</h2>
         <div className="gallery">
-          <div className="gallery-img"/>
-          <div className="gallery-img"/>
-          <div className="gallery-img"/>
-          <div className="gallery-img"/>
-          <div className="gallery-img"/>
+          <div className="gallery-img">
+            <img src="/Couplephotos/c1.jpeg" alt="Gallery 1" />
+          </div>
+          <div className="gallery-img">
+            <img src="/Couplephotos/c2.jpeg" alt="Gallery 2" />
+          </div>
+          <div className="gallery-img">
+            <img src="/Couplephotos/c6.jpeg" alt="Gallery 3" />
+          </div>
+          <div className="gallery-img">
+            <img src="/Couplephotos/c4.jpeg" alt="Gallery 4" />
+          </div>
+          <div className="gallery-img">
+            <img src="/Couplephotos/c1.jpeg" alt="Gallery 5" />
+          </div>
         </div>
       </section>
 
       <section className="venue-section">
         <h2>WEDDING VENUE</h2>
         <p>Orbit Resort, Udaipur - Rajasthan</p>
-        <div className="map-placeholder"/>
+        <div className="map-placeholder">
+          <MapSection />
+        </div>
       </section>
 
       <section className="rsvp-section">

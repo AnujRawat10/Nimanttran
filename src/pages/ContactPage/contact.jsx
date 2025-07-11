@@ -2,8 +2,9 @@
 
 import { useState } from "react"
 import "./contact.css"
-import MapSection from "../../component/MapSection" 
-import { FaInstagram, FaWhatsapp, FaYoutube , FaPhone } from 'react-icons/fa'
+import MapSection from "../../component/MapSection"
+import { FaInstagram, FaWhatsapp, FaYoutube, FaPhone } from 'react-icons/fa'
+import backgroundImage from "/contactbg.png" // Adjust the path as necessary
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +50,14 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact-container">
+    <div
+  className="contact-container"
+  style={{
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+  }}>
       {/* Main Contact Section */}
       <div className="contact-section">
         <h1 className="contact-title">Get In touch</h1>
@@ -186,8 +194,8 @@ const Contact = () => {
         </div>
       </div>
 
-        {/* Map Section */} 
-        <MapSection />
+      {/* Map Section */}
+      <MapSection />
       {/* Google Maps Section */}
       {/* <div className="map-section">
         <h2 className="map-title">Our Location</h2>

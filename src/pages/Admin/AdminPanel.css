@@ -1,0 +1,37 @@
+.admin-panel {
+  padding: 2rem;
+  background: #111;
+  color: #fff;
+}
+
+.admin-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #222;
+  margin-top: 1rem;
+}
+
+.admin-panel th,
+.admin-panel td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.admin-panel a {
+  color: #ff69b4;
+  text-decoration: underline;
+}
+
+.admin-panel button {
+  background: #ff4444;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-panel button:hover {
+  background: #dd2222;
+}

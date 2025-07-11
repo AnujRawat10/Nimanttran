@@ -1,6 +1,6 @@
 
 .contact-container {
-  background-color: #f8f8f8;
+  background-color: url('/contactbg.png') no-repeat center center fixed;
   min-height: 100vh;
 }
 

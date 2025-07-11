@@ -10,10 +10,10 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+/* 
 .home {
   overflow-x: hidden;
-}
+} */
 
 /* Header */
 .header {
@@ -25,6 +25,7 @@ html, body {
   position: sticky;
   top: 0;
   z-index: 100;
+  /* background: rgba(0, 0, 0.5, 0) */
 }
 
 
@@ -99,6 +100,7 @@ html, body {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 10px;
 }
 
 /* Templates */
@@ -108,8 +110,14 @@ html, body {
 }
 
 .templates h2 {
-  color: #ff69b4;
+  color: white;
   margin-bottom: 2rem;
+}
+.home {
+  background: url('/HomeBG.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 2rem 1rem;
 }
 
 .close-btn {
@@ -189,8 +197,10 @@ html, body {
 /* Snapchat Filters */
 .filters {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   flex-wrap: wrap;
   padding: 2rem 1rem;
   background: #111;
@@ -215,7 +225,8 @@ html, body {
 /* Features */
 .features {
   padding: 2rem 1rem;
-  background: #000;
+  background:rgba(0, 0, 0, 0.5);
+
 }
 
 .feature-block {
@@ -317,6 +328,9 @@ html, body {
   max-width: 800px;
   margin: 0 auto;
   color: #ccc;
+  border-radius: 10px;
+  margin-top: 12px;
+  background:  rgba(0, 0, 0, 0.5);
 }
 
 .faq h2 {

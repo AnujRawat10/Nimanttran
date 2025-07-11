@@ -21,9 +21,9 @@ function Header() {
         <header className="header">
             <div className="header-left">
                 <div className="logo">
-                    <img src="/logo.png" alt="Logo" className="logo-img" />
+                    {/* <img src="/logo.png" alt="Logo" className="logo-img" /> */}
                     <div className="logo-text">
-                        <div className="logo-hindi">आमंत्रण</div>
+                        <div className="logo-hindi">निमंत्रण</div>
                         <div className="logo-eng">WEB INVITATIONS</div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ function Header() {
                     </button>
 
                     <div className="dropdown-content">
-                        <Link to="/templates1">First Template</Link>
+                        <Link to="/template1">First Template</Link>
                         <Link to="/templates2">Second Template</Link>
                         <Link to="/templates3">Third Template</Link>
                     </div>

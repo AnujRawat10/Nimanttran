@@ -20,7 +20,7 @@ const PackagePlans = () => {
             <li>✅ Background Music</li>
             <li>✅ Free QR Code</li>
             <li>✅ 15 Days validity post wedding</li>
-            <li>✅ Amantrran domain link</li>
+            <li>✅ Nimanttran domain link</li>
           </ul>
           <a className="whatsapp-btn" href="https://wa.me/919205110208" target="_blank">WhatsApp Us</a>
           <p className="note">No hidden charges. Invitation link will be like<br /><strong>www.nimanttran.com/BrideWedsGroom</strong><br />( Example )</p>

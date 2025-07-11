@@ -1,6 +1,6 @@
-/* template.css */
+/* Template1Layout.css */
 
-/* Global Reset and Overflow Fix */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -9,23 +9,18 @@
 
 html, body {
   overflow-x: hidden;
-  width: 100%;
   font-family: 'Georgia', serif;
-}
-
-body {
   background-color: #fff;
 }
 
 .wedding-template {
   color: #333;
   max-width: 100vw;
-  margin: 0 auto;
-  width: 100%;
   overflow-x: hidden;
   padding: 0 1rem;
 }
 
+/* Hero Section */
 .hero-section {
   background: url('/BGbanner.png') center/cover no-repeat;
   height: 100vh;
@@ -64,11 +59,11 @@ body {
   display: inline-block;
 }
 
+/* Countdown Section */
 .countdown-section {
   background: #ffe0fb;
   padding: 3rem 0;
   text-align: center;
-  width: 100%;
 }
 
 .section-heading {
@@ -81,7 +76,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  max-width: 100%;
 }
 
 .unit span {
@@ -91,14 +85,13 @@ body {
 }
 
 .unit small {
-  display: block;
   font-size: 1rem;
   margin-top: 0.5rem;
 }
 
+/* Couple Section */
 .couple-section {
   padding: 3rem 0;
-  width: 100%;
 }
 
 .couple-container {
@@ -106,7 +99,6 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 3rem;
-  width: 100%;
 }
 
 .person {
@@ -134,20 +126,12 @@ body {
   background-position: center;
 }
 
-.groom-photo {
-  background-image: url('groom-image.jpg');
-}
-
-.bride-photo {
-  background-image: url('bride-image.jpg');
-}
-
+/* Quote */
 .quote-section {
   padding: 3rem 0;
   background: url('quote-bg.jpg') center/cover no-repeat;
   text-align: center;
   color: white;
-  width: 100%;
 }
 
 blockquote {
@@ -156,20 +140,19 @@ blockquote {
 }
 
 blockquote cite {
-  display: block;
   font-family: 'Dancing Script', cursive;
   color: #ff5ec3;
+  display: block;
   margin-top: 1rem;
-  font-size: 1.3rem;
 }
 
+/* Ceremony */
 .ceremony-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 3rem 0;
-  width: 100%;
 }
 
 .ceremony-card {
@@ -181,9 +164,9 @@ blockquote cite {
   text-align: center;
 }
 
+/* Gallery */
 .gallery-section {
   padding: 3rem 0;
-  width: 100%;
 }
 
 .gallery {
@@ -191,25 +174,22 @@ blockquote cite {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
-  width: 100%;
 }
 
-.gallery-img {
+template-gallery-img{
   flex: 1 1 30%;
   min-width: 180px;
   height: 250px;
   background-color: #ddd;
   border-radius: 8px;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  object-fit: contain;
 }
 
+/* Venue */
 .venue-section {
   margin-top: 7rem;
   text-align: center;
-  width: 100%;
 }
 
 .map-placeholder {
@@ -219,10 +199,10 @@ blockquote cite {
   margin-top: 1rem;
 }
 
+/* RSVP */
 .rsvp-section {
-  padding: 7rem 0;
+  padding: 5rem 0;
   text-align: center;
-  width: 100%;
 }
 
 .rsvp-section ul {
@@ -244,6 +224,7 @@ blockquote cite {
   margin-top: 1rem;
 }
 
+/* Music Button */
 .music-button {
   position: fixed;
   top: 1rem;
@@ -285,7 +266,7 @@ blockquote cite {
     align-items: center;
   }
 
-  .gallery-img {
+  template-gallery-img{
     width: 100%;
   }
 
