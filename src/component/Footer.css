@@ -125,7 +125,7 @@
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
-.social-icon.whatsapp {
+.social-icon.footer-whatsapp {
   background: #25d366;
 }
 
@@ -207,8 +207,8 @@
   color: #c0392b;
 }
 
-/* WhatsApp Order Button */
-/* .whatsapp-order-btn {
+/* footer-whatsapp Order Button */
+.footer-whatsapp-order-btn {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -224,23 +224,23 @@
   text-decoration: none;
 }
 
-.whatsapp-order-btn:hover {
+.footer-whatsapp-order-btn:hover {
   background: #20b954;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
 }
 
-.whatsapp-icon {
+.footer-whatsapp-icon {
   font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.whatsapp-icon svg {
+.footer-whatsapp-icon svg {
   width: 1.2rem;
   height: 1.2rem;
-} */
+}
 
 /* Responsive Design */
 @media (max-width: 1024px) {
@@ -331,7 +331,7 @@
     padding: 0 20px;
   }
 
-  /* .whatsapp-order-btn {
+  /* .footer-whatsapp-order-btn {
     padding: 10px 20px;
     font-size: 0.9rem;
   } */

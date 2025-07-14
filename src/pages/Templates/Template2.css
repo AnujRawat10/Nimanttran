@@ -1,0 +1,851 @@
+/* Template2.css - Enhanced Wedding Template */
+
+.template2-wedding-template {
+  color: #333;
+  max-width: 100vw;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Georgia", serif;
+}
+
+.template2-hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/placeholder.svg?height=1080&width=1920")
+    center / cover no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.template2-overlay {
+  /* background-color: rgba(255, 94, 195, 0.8); */
+  color: #fff;
+  padding: 3rem;
+  width: 100%;
+  /* border-radius: 20px; */
+  /* backdrop-filter: blur(10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); */
+}
+
+.template2-subtitle {
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.template2-title {
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  margin: 2rem 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.template2-date {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  box-shadow: 0 8px 20px rgba(255, 94, 195, 0.4);
+}
+
+.template2-countdown-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("/placeholder.svg?height=600&width=1200") center / cover no-repeat;
+  padding: 4rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.template2-section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Dancing Script", cursive;
+}
+
+.template2-countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 100%;
+}
+
+.template2-unit {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 94, 195, 0.2);
+  min-width: 120px;
+  border: 3px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.template2-unit:hover {
+  transform: translateY(-10px);
+}
+
+.template2-unit span {
+  font-size: 3.5rem;
+  font-weight: bold;
+  display: block;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.template2-unit small {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #666;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.template2-couple-section {
+  padding: 4rem 0;
+  width: 100%;
+  background: #fff;
+}
+
+.template2-couple-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-person-photo {
+  width: 280px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  box-shadow: 0 15px 35px rgba(255, 94, 195, 0.3);
+  border: 5px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.template2-person-photo:hover {
+  transform: scale(1.05);
+}
+
+.template2-person {
+  flex: 1 1 45%;
+  text-align: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    url("/placeholder.svg?height=400&width=600") center / cover no-repeat;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(255, 94, 195, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.template2-person h3 {
+  font-size: 1.4rem;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.template2-person h4 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.template2-person p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.template2-love-story-section {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(248, 248, 248, 0.9), rgba(248, 248, 248, 0.9)),
+    url("/placeholder.svg?height=800&width=1200") center / cover no-repeat;
+  text-align: center;
+}
+
+.template2-story-timeline {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-story-item {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 94, 195, 0.1);
+}
+
+.template2-story-year {
+  background: #333;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  min-width: 80px;
+  text-align: center;
+}
+
+.template2-story-content {
+  text-align: left;
+}
+
+.template2-story-content h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.template2-story-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.template2-quote-section {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(255, 94, 195, 0.9), rgba(255, 94, 195, 0.9)),
+    url("/placeholder.svg?height=600&width=1200") center / cover no-repeat;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.template2-quote-section blockquote {
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.template2-quote-section blockquote cite {
+  display: block;
+  font-family: "Dancing Script", cursive;
+  color: #ffe0fb;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.template2-wedding-party-section {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("/placeholder.svg?height=600&width=1200") center / cover no-repeat;
+  text-align: center;
+}
+
+.template2-party-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-party-group {
+  margin-bottom: 4rem;
+}
+
+.template2-party-group h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.template2-party-members {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.template2-party-member {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(255, 94, 195, 0.1);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 94, 195, 0.2);
+}
+
+.template2-party-member:hover {
+  transform: translateY(-10px);
+}
+
+.template2-party-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #333;
+}
+
+.template2-party-member h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.template2-party-member p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.template2-ceremony-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 0;
+  width: 100%;
+  background: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)),
+    url("/placeholder.svg?height=600&width=1200") center / cover no-repeat;
+}
+
+.template2-ceremony-card {
+  background: #333;
+  color: #fff;
+  padding: 3rem;
+  width: 280px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.template2-ceremony-card:hover {
+  transform: translateY(-10px);
+}
+
+.template2-ceremony-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-family: "Dancing Script", cursive;
+}
+
+.template2-ceremony-card p {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.template2-gallery-section {
+  padding: 4rem 0;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+}
+
+.template2-gallery-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.template2-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-gallery-img {
+  flex: 1 1 calc(25% - 2rem);
+  max-width: calc(25% - 2rem);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(255, 94, 195, 0.2);
+  background-color: #fff;
+  height: 280px;
+  border: 3px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.template2-gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.template2-gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.template2-accommodation-section {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(250, 250, 250, 0.9), rgba(250, 250, 250, 0.9)),
+    url("/placeholder.svg?height=600&width=1200") center / cover no-repeat;
+  text-align: center;
+}
+
+.template2-accommodation-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-hotel-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(255, 94, 195, 0.2);
+  width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.template2-hotel-card:hover {
+  transform: translateY(-10px);
+}
+
+.template2-hotel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.template2-hotel-info {
+  padding: 2rem;
+}
+
+.template2-hotel-info h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.template2-hotel-info p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.template2-hotel-details {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.template2-hotel-details span {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #555;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 94, 195, 0.2);
+}
+
+.template2-gift-registry-section {
+  padding: 4rem 0;
+  background: #fff;
+  text-align: center;
+}
+
+.template2-registry-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-registry-container p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.template2-registry-stores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.template2-registry-store {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 94, 195, 0.1);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 94, 195, 0.2);
+}
+
+.template2-registry-store:hover {
+  transform: translateY(-5px);
+}
+
+.template2-registry-store img {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.template2-registry-btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.template2-registry-btn:hover {
+  background: #e54bb0;
+  transform: translateY(-2px);
+}
+
+.template2-testimonials-section {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(248, 248, 248, 0.9), rgba(248, 248, 248, 0.9)),
+    url("/placeholder.svg?height=600&width=1200") center / cover no-repeat;
+  text-align: center;
+}
+
+.template2-testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 94, 195, 0.1);
+  width: 350px;
+  transition: transform 0.3s ease;
+}
+
+.template2-testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.template2-testimonial-content {
+  margin-bottom: 1.5rem;
+}
+
+.template2-testimonial-content p {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.template2-testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.template2-testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.template2-testimonial-author h4 {
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+
+.template2-testimonial-author span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.template2-venue-section {
+  margin-top: 4rem;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.template2-venue-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.template2-venue-section p {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.template2-map-placeholder {
+  height: 400px;
+  background-color: #eee;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: 0 15px 35px rgba(255, 94, 195, 0.2);
+  border: 3px solid #333;
+}
+
+.template2-contact-section {
+  padding: 4rem 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("/placeholder.svg?height=600&width=1200") center / cover no-repeat;
+  text-align: center;
+}
+
+.template2-contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.template2-contact-info,
+.template2-social-media {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 94, 195, 0.1);
+  flex: 1;
+  min-width: 300px;
+}
+
+.template2-contact-info h3,
+.template2-social-media h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.template2-contact-info p {
+  color: #666;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.template2-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.template2-social-link {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.template2-social-link:hover {
+  background: #e54bb0;
+  transform: translateY(-2px);
+}
+
+.template2-rsvp-section {
+  padding: 4rem 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 4rem;
+  background: #333;
+  color: #fff;
+}
+
+.template2-rsvp-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+}
+
+.template2-rsvp-section ul {
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.template2-footer-tag {
+  font-weight: bold;
+  margin-top: 3rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.template2-footer-message {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.template2-music-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  /* background: #333; */
+  /* color: white; */
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  font-weight: bold;
+  z-index: 1000;
+  cursor: pointer;
+  border: none;
+  /* box-shadow: 0 8px 20px rgba(255, 94, 195, 0.3); */
+  transition: all 0.3s ease;
+}
+
+.template2-music-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(255, 94, 195, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .template2-title {
+    font-size: 3rem;
+  }
+
+  .template2-countdown {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .template2-couple-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template2-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template2-ceremony-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template2-gallery-img {
+    width: 100%;
+    max-width: 400px;
+    flex: 1 1 100%;
+  }
+
+  .template2-person {
+    width: 100%;
+  }
+
+  .template2-person-photo {
+    width: 250px;
+    height: 300px;
+  }
+
+  .template2-story-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .template2-party-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template2-accommodation-container,
+  .template2-testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template2-contact-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .template2-title {
+    font-size: 2.5rem;
+  }
+
+  .template2-unit span {
+    font-size: 2.5rem;
+  }
+
+  .template2-person-photo {
+    width: 200px;
+    height: 250px;
+  }
+
+  .template2-overlay {
+    padding: 2rem;
+  }
+
+  .template2-ceremony-card {
+    width: 280px;
+    padding: 2rem;
+  }
+
+  .template2-hotel-card,
+  .template2-testimonial-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

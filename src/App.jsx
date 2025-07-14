@@ -7,7 +7,8 @@ import Footer from './component/Footer';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import ContactPage from './pages/ContactPage/contact';
-import Template from './pages/Template';
+import Template from './pages/Templates/Template';
+import Template2 from './pages/Templates/Template2';
 import Packagesplan from './pages/PackagePlans/PackagePlans';
 import AdminPanel from './pages/Admin/AdminPanel';
 import TemplateForm from './component/TemplateForm';
@@ -29,6 +30,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/packages" element={<Packagesplan />} />
         <Route path="/template1" element={<Template />} />
+        <Route path="/template2" element={<Template2 />} />
         <Route path="/template-form" element={<TemplateForm selectedTemplate="template1" />} />
         
         {/* Preview dynamic template based on slug */}

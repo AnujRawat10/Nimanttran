@@ -6,13 +6,13 @@ import "aos/dist/aos.css";
 import "./Home.css";
 
 // Images
-import heroBanner from "../assets/Banner.jpg";
-import template1 from "../assets/TEMPLATE1.png";
-import template2 from "../assets/TEMPLATE2.png";
-import template3 from "../assets/TEMPLATE3.png";
-import filterImg from "../assets/Scanner.png";
-import galleryImg from "../assets/TEMPLATE1.png";
-import featuresImg from "../assets/WEDDING_INVITE.png";
+import heroBanner from "/assets/Banner.jpg";
+import template1 from "/assets/TEMPLATE1.png";
+import template2 from "/assets/TEMPLATE2.png";
+import template3 from "/assets/TEMPLATE3.png";
+import filterImg from "/assets/Scanner.png";
+import galleryImg from "/assets/TEMPLATE1.png";
+import featuresImg from "/assets/WEDDING_INVITE.png";
 
 function Home() {
   useEffect(() => {

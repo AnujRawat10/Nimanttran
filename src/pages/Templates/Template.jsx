@@ -1,7 +1,7 @@
 // Template.jsx
 import { useEffect, useRef, useState } from "react";
 import "./Template.css";
-import MapSection from "../component/MapSection";
+import MapSection from "../../component/MapSection";
 
 const Template = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
