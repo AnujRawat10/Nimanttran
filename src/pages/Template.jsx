@@ -61,22 +61,24 @@ const Template = () => {
         </div>
       </section>
 
-      <section className="couple-section">
-        <div className="couple-container">
-          <div className="person groom">
-            <h3>THE GROOM</h3>
-            <h4>Ryan</h4>
-            <p>What can I say, she is amazing... She is my forever.</p>
-            <div className="photo groom-photo" />
-          </div>
-          <div className="person bride">
-            <h3>THE BRIDE</h3>
-            <h4>Emily</h4>
-            <p>I realized how much I miss him. I never wanted to be without him again!</p>
-            <div className="photo bride-photo" />
-          </div>
-        </div>
-      </section>
+     <section className="couple-section">
+  <div className="couple-container">
+    <div className="person groom">
+      <h3>THE GROOM</h3>
+      <h4>Ryan</h4>
+      <p>What can I say, she is amazing... She is my forever.</p>
+      <img src="/groom.png" alt="Groom" className="person-photo" />
+    </div>
+
+    <div className="person bride">
+      <h3>THE BRIDE</h3>
+      <h4>Emily</h4>
+      <p>I realized how much I miss him. I never wanted to be without him again!</p>
+      <img src="/bride.png" alt="Bride" className="person-photo" />
+    </div>
+  </div>
+</section>
+
 
       <section className="quote-section">
         <blockquote>
@@ -84,7 +86,6 @@ const Template = () => {
           <cite>T. Tolis</cite>
         </blockquote>
       </section>
-
       <section className="ceremony-section">
         <div className="ceremony-card">
           <h3>HALDI</h3>
@@ -104,14 +105,33 @@ const Template = () => {
           <p>Time: 07:00 PM</p>
           <p>Venue: Orbit Resort, Udaipur</p>
         </div>
+        <div className="ceremony-card">
+          <h3>SANGEET</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 07:00 PM</p>
+          <p>Venue: Orbit Resort, Udaipur</p>
+        </div>
+        <div className="ceremony-card">
+          <h3>SANGEET</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 07:00 PM</p>
+          <p>Venue: Orbit Resort, Udaipur</p>
+        </div>
+        <div className="ceremony-card">
+          <h3>SANGEET</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 07:00 PM</p>
+          <p>Venue: Orbit Resort, Udaipur</p>
+        </div>
+        
       </section>
 
       <section className="gallery-section">
-        <h2>OUR LOVELY MOMENTS</h2>
+        <h2 style ={{textAlign: "center" , marginBottom: "40px" }}>OUR LOVELY MOMENTS</h2>
         <div className="gallery">
-          <div className="gallery-img">
-            <img src="/Couplephotos/c1.jpeg" alt="Gallery 1" />
-          </div>
+  <div className="gallery-img">
+    <img src="/Couplephotos/c1.jpeg" alt="Gallery 1" />
+  </div>
           <div className="gallery-img">
             <img src="/Couplephotos/c2.jpeg" alt="Gallery 2" />
           </div>
@@ -122,7 +142,10 @@ const Template = () => {
             <img src="/Couplephotos/c4.jpeg" alt="Gallery 4" />
           </div>
           <div className="gallery-img">
-            <img src="/Couplephotos/c1.jpeg" alt="Gallery 5" />
+            <img src="/Couplephotos/c5.jpeg" alt="Gallery 5" />
+          </div>
+          <div className="gallery-img">
+            <img src="/Couplephotos/c3.jpeg" alt="Gallery 2" />
           </div>
         </div>
       </section>
@@ -134,7 +157,6 @@ const Template = () => {
           <MapSection />
         </div>
       </section>
-
       <section className="rsvp-section">
         <h2>RSVP</h2>
         <ul>
@@ -151,5 +173,4 @@ const Template = () => {
     </div>
   );
 };
-
 export default Template;

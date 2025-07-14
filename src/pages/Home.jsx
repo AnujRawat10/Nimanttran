@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import "./Home.css";
 
 // Images
-import heroBanner from "../assets/Banner.jpg";
+import heroBanner from "../assets/banner.mp4";
 import template1 from "../assets/TEMPLATE1.png";
 import template2 from "../assets/TEMPLATE2.png";
 import template3 from "../assets/TEMPLATE3.png";
@@ -47,9 +47,40 @@ function Home() {
       </header> */}
       <div className="home">
         {/* Hero Section */}
-        <section className="hero" data-aos="fade-up">
-          <img src={heroBanner} alt="Hero Banner" />
-        </section>
+        <div className="home">
+  {/* Hero Section */}
+  <section className="hero" data-aos="fade-up">
+    <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
+      {/* <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          minWidth: '100%',
+          minHeight: '100%',
+          transform: 'translate(-50%, -50%)',
+          objectFit: 'cover',
+          zIndex: -1,
+        }}
+      >
+        <source src={heroBanner} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> */}
+
+      {/* Optional overlay content */}
+      <div style={{ position: 'relative', zIndex: 1, color: 'white', textAlign: 'center', top: '40%' }}>
+        <h1>Welcome to Nimantrran.com</h1>
+        <p>Scroll down to explore</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
 
         {/* Templates */}
         <section className="templates" data-aos="fade-up">

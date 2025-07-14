@@ -12,6 +12,7 @@ import Packagesplan from './pages/PackagePlans/PackagePlans';
 import AdminPanel from './pages/Admin/AdminPanel';
 import TemplateForm from './component/TemplateForm';
 import DynamicTemplate from './component/DynamicTemplate';
+import Templatethree from './pages/TemplateLayouts/Template3';
 
 function App() {
   const location = useLocation();
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+    
       {!hideHeaderFooter && <Header />}
 
       <Routes>
@@ -29,6 +31,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/packages" element={<Packagesplan />} />
         <Route path="/template1" element={<Template />} />
+        <Route path="/template3" element={<Templatethree />} />
         <Route path="/template-form" element={<TemplateForm selectedTemplate="template1" />} />
         
         {/* Preview dynamic template based on slug */}

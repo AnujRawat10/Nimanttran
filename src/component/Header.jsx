@@ -52,8 +52,8 @@ function Header() {
 
                     <div className="dropdown-content">
                         <Link to="/template1">First Template</Link>
-                        <Link to="/templates2">Second Template</Link>
-                        <Link to="/templates3">Third Template</Link>
+                        <Link to="/template2">Second Template</Link>
+                        <Link to="/template3">Third Template</Link>
                     </div>
                 </div>
 

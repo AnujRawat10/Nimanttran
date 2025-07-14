@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   width: 100%;
   overflow-x: hidden;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
 
 .hero-section {
@@ -102,12 +102,22 @@ body {
 }
 
 .couple-container {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 3rem;
   width: 100%;
 }
+.person-photo {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-top: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 
 .person {
   flex: 1 1 45%;
@@ -144,9 +154,9 @@ body {
 
 .quote-section {
   padding: 3rem 0;
-  background: url('quote-bg.jpg') center/cover no-repeat;
+  /* background: url('banner.mp4') center/cover no-repeat; */
   text-align: center;
-  color: white;
+  color: ff5ec3;
   width: 100%;
 }
 
@@ -182,7 +192,7 @@ blockquote cite {
 }
 
 .gallery-section {
-  padding: 3rem 0;
+  padding: 4rem 0;
   width: 100%;
 }
 
@@ -191,20 +201,26 @@ blockquote cite {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
-  width: 100%;
 }
 
+
 .gallery-img {
-  flex: 1 1 30%;
-  min-width: 180px;
-  height: 250px;
-  background-color: #ddd;
-  border-radius: 8px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: contain;
+  flex: 1 1 calc(33.33% - 1rem);
+  max-width: calc(33.33% - 1rem);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  height: 220px;
 }
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 .venue-section {
   margin-top: 7rem;
@@ -223,6 +239,7 @@ blockquote cite {
   padding: 7rem 0;
   text-align: center;
   width: 100%;
+      margin-top: 80px;
 }
 
 .rsvp-section ul {
@@ -246,7 +263,7 @@ blockquote cite {
 
 .music-button {
   position: fixed;
-  top: 1rem;
+  top: 6rem;
   left: 1rem;
   background-color: #fff;
   color: #333;
@@ -288,6 +305,13 @@ blockquote cite {
   .gallery-img {
     width: 100%;
   }
+  @media (max-width: 768px) {
+  .gallery-img {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 
   .person {
     width: 100%;
