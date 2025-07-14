@@ -1,3 +1,4 @@
+// Template1Layout.jsx
 import React, { useEffect, useRef, useState } from "react";
 import "./Template1Layout.css";
 
@@ -16,7 +17,7 @@ const Template1Layout = ({ data }) => {
     brideQuote,
     quoteText,
     hashtag,
-    mapLink,
+    mapLink ,
   } = data;
 
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -49,8 +50,8 @@ const Template1Layout = ({ data }) => {
     setIsPlaying(!isPlaying);
   };
 
-  const groomImage = couplePhotos[0] ? `http://localhost:5000/${couplePhotos[0]}` : null;
-  const brideImage = couplePhotos[1] ? `http://localhost:5000/${couplePhotos[1]}` : null;
+  const groomImage = couplePhotos?.[0] ? `http://localhost:5000/${couplePhotos[0]}` : null;
+  const brideImage = couplePhotos?.[1] ? `http://localhost:5000/${couplePhotos[1]}` : null;
 
   return (
     <div className="wedding-template">
@@ -88,7 +89,8 @@ const Template1Layout = ({ data }) => {
             <h4>{groomName}</h4>
             <p>{groomQuote}</p>
             {groomImage && (
-              <div className="photo groom-photo" style={{ backgroundImage: `url(${groomImage})` }} />
+                <img src={groomImage} alt={`${groomName}`} className="photo groom-photo" />
+            //   <div className="photo groom-photo" style={{ backgroundImage: `url(${groomImage})` }} />
             )}
           </div>
           <div className="person bride">
@@ -96,7 +98,8 @@ const Template1Layout = ({ data }) => {
             <h4>{brideName}</h4>
             <p>{brideQuote}</p>
             {brideImage && (
-              <div className="photo bride-photo" style={{ backgroundImage: `url(${brideImage})` }} />
+                <img src={brideImage} alt={`${brideName}`} className="photo bride-photo" />
+            //   <div className="photo bride-photo" style={{ backgroundImage: `url(${brideImage})` }} />
             )}
           </div>
         </div>

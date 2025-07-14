@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import ghibliImage from "../assets/AboutUs.png"; // Replace with your image
+import ghibliImage from "/assets/AboutUs.png"; // Replace with your image
 
 const AboutUs = () => {
   return (
