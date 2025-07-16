@@ -37,7 +37,7 @@ const Template = () => {
   return (
     <div className="wedding-template">
       <audio ref={audioRef} loop>
-        <source src="src/assets/mixkit-ill-always-remember-806.mp3" type="audio/mpeg" />
+        <source src="/assets/mixkit-ill-always-remember-806.mp3" type="audio/mpeg" />
       </audio>
       <button className="music-button" onClick={toggleAudio}>
         {isPlaying ? "Pause Music" : "Play Music"}
@@ -47,7 +47,7 @@ const Template = () => {
         <div className="overlay">
           <h2 className="subtitle">THE WEDDING CELEBRATION OF</h2>
           <h1 className="title">Ryan & Emily</h1>
-          <p className="date">22<sup>th</sup> October, 2025</p>
+          <p className="date1">22<sup>th</sup> October, 2025</p>
         </div>
       </section>
 

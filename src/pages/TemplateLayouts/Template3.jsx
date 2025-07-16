@@ -43,7 +43,7 @@ const Template3 = () => {
   
     <div className="wedding-template">
       <audio ref={audioRef} loop>
-        <source src="src/assets/mixkit-ill-always-remember-806.mp3" type="audio/mpeg" />
+        <source src="/assets/mixkit-ill-always-remember-806.mp3" type="audio/mpeg" />
       </audio>
       <button className="music-button" onClick={toggleAudio}>
         {isPlaying ? "Pause Music" : "Play Music"}
@@ -52,18 +52,18 @@ const Template3 = () => {
     {/* <div className="template-wrapper"> */}
       {/* Hero Section */}
       <div className="hero-section3">
-        <div className="overlay">
-          <h1 className="hero-title">Suraj & Neha</h1>
-          <p className="hero-subtitle">ARE GOING TO TIE THE KNOT</p>
-          <p className="hero-date">ON<br/>22TH OCTOBER, 2025</p>
-        </div>
+        {/* <div className="overlay">
+           <h1 className="hero-title">Suraj & Neha</h1>
+          <p className="hero-subtitle">ARE GOING TO TIE THE KNOT</p> 
+         <p className="hero-date">ON<br/>22TH OCTOBER, 2025</p> 
+        </div> */}
       </div>
 
       {/* Countdown */}
       <div className="countdown-section">
         <div className="countdown-banner">
-          <strong>Don't miss the full experience</strong>
-          <p>Scroll till the end to explore all features and order details.</p>
+          <strong>On 22th October 2025</strong>
+          <p></p>
         </div>
         <div className="countdown-values">
           <div className="unit"><span>{timeLeft.days}</span><small>Days</small></div>
@@ -89,6 +89,45 @@ const Template3 = () => {
           <p>D/O Manish - Sunita Patil</p>
         </div>
       </div>
+      <section className="ceremony-section">
+        <div className="ceremony-card">
+          <h3>HALDI</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 12:00 PM</p>
+          <p>Venue: Pushp Villa, Udaipur</p>
+        </div>
+        <div className="ceremony-card">
+          <h3>MEHANDI</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 03:00 PM</p>
+          <p>Venue: Pushp Villa, Udaipur</p>
+        </div>
+        <div className="ceremony-card">
+          <h3>SANGEET</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 07:00 PM</p>
+          <p>Venue: Orbit Resort, Udaipur</p>
+        </div>
+        <div className="ceremony-card">
+          <h3>SANGEET</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 07:00 PM</p>
+          <p>Venue: Orbit Resort, Udaipur</p>
+        </div>
+        <div className="ceremony-card">
+          <h3>SANGEET</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 07:00 PM</p>
+          <p>Venue: Orbit Resort, Udaipur</p>
+        </div>
+        <div className="ceremony-card">
+          <h3>SANGEET</h3>
+          <p>Date: 21 October, 2025</p>
+          <p>Time: 07:00 PM</p>
+          <p>Venue: Orbit Resort, Udaipur</p>
+        </div>
+        
+      </section>
 
       {/* Venue */}
       <div className="venue-section">
@@ -116,7 +155,7 @@ const Template3 = () => {
     spaceBetween={20}
     slidesPerView={1}
     pagination={{ clickable: true }}
-    autoplay={{ delay: 3000, disableOnInteraction: false }}
+    autoplay={{ delay: 1000, disableOnInteraction: false }}
     loop={true}
     breakpoints={{
       640: { slidesPerView: 1 },

@@ -23,7 +23,7 @@
 
 /* Hero Section */
 .hero-section3 {
-  background: url('https://images.unsplash.com/photo-1517841905240-472988babdf9') center center / cover no-repeat;
+  background: url('/bgtemplate.jpg') center center / cover no-repeat;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -31,14 +31,14 @@
   position: relative;
 }
 
-.overlay {
+/* .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   color: #fff;
   border-radius: 10px;
   width: 90%;
   max-width: 600px;
-}
+} */
 
 .hero-title {
   font-family: 'Dancing Script', cursive;
@@ -61,6 +61,7 @@
 .countdown-section {
   background: #fff;
   padding: 2rem;
+  color: #222;
 }
 
 .countdown-banner {
@@ -107,6 +108,23 @@
   max-width: 300px;
   height: auto;
   border-radius: 10px;
+}
+.ceremony-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.ceremony-card {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  width: 280px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /* Venue */

@@ -47,6 +47,7 @@ body {
   font-size: 1.5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color:#ff5ec3;
 }
 
 .title {
@@ -54,11 +55,11 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 
-.date {
+.date1 {
   background-color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 30px;
-  color: #ff5ec3;
+  color: black;
   font-weight: bold;
   margin-top: 1rem;
   display: inline-block;
@@ -74,6 +75,7 @@ body {
 .section-heading {
   font-size: 2rem;
   margin-bottom: 1.5rem;
+  color: #ff5ec3;
 }
 
 .countdown {
@@ -99,6 +101,7 @@ body {
 .couple-section {
   padding: 3rem 0;
   width: 100%;
+  
 }
 
 .couple-container {
@@ -160,18 +163,18 @@ body {
   width: 100%;
 }
 
-blockquote {
+/* blockquote {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-blockquote cite {
+blockquote cite1 {
   display: block;
   font-family: 'Dancing Script', cursive;
-  color: #ff5ec3;
+  color: gold;
   margin-top: 1rem;
   font-size: 1.3rem;
-}
+} */
 
 .ceremony-section {
   display: flex;
@@ -192,15 +195,18 @@ blockquote cite {
 }
 
 .gallery-section {
-  padding: 4rem 0;
+  padding: 4rem 1rem; /* add horizontal padding */
   width: 100%;
+  box-sizing: border-box;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center; /* changed from space-between */
   gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto; /* center the gallery container */
 }
 
 
@@ -212,6 +218,11 @@ blockquote cite {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   height: 220px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
 }
 
 .gallery-img img {
@@ -307,10 +318,11 @@ blockquote cite {
   }
   @media (max-width: 768px) {
   .gallery-img {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 90%;
+    max-width: 90%;
   }
 }
+
 
 
   .person {
