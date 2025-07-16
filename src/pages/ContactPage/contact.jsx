@@ -163,8 +163,8 @@ const Contact = () => {
 
               <div className="email-section">
                 <span className="email-label">Email : </span>
-                <a href="mailto:business@amantran.com" className="email-address" onClick={handleEmailClick}>
-                  business@amantran.com
+                <a href="mailto:business@nimanttran.com" className="email-address" onClick={handleEmailClick}>
+                  business@nimanttran.com
                 </a>
               </div>
 

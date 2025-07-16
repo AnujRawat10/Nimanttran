@@ -44,7 +44,7 @@ const Template = () => {
       </button>
 
       <section className="hero-section">
-        <div className="overlay">
+        <div className="overlay-template1">
           <h2 className="subtitle">THE WEDDING CELEBRATION OF</h2>
           <h1 className="title">Ryan & Emily</h1>
           <p className="date">22<sup>th</sup> October, 2025</p>

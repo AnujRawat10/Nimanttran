@@ -1,17 +1,39 @@
 /* Home.css */
-
 /* Reset & Base */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background-color: #000;
   color: #fff;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-/* 
-.home {
+
+/* Responsive logo */
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* .home {
   overflow-x: hidden;
 } */
 
@@ -27,8 +49,6 @@ html, body {
   z-index: 100;
   /* background: rgba(0, 0, 0.5, 0) */
 }
-
-
 
 .logo {
   display: flex;
@@ -63,6 +83,7 @@ html, body {
   align-items: center;
   gap: 1.5rem;
   position: relative;
+  margin-right: 60px;
 }
 
 .nav a {
@@ -113,8 +134,9 @@ html, body {
   color: white;
   margin-bottom: 2rem;
 }
+
 .home {
-  background: url('/HomeBG.png') no-repeat center center fixed;
+  background: url("/HomeBG.png") no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   padding: 2rem 1rem;
@@ -139,7 +161,6 @@ html, body {
     display: block;
   }
 }
-
 
 .template-grid {
   display: flex;
@@ -225,8 +246,7 @@ html, body {
 /* Features */
 .features {
   padding: 2rem 1rem;
-  background:rgba(0, 0, 0, 0.5);
-
+  /* background:rgba(0, 0, 0, 0.5); */
 }
 
 .feature-block {
@@ -248,11 +268,11 @@ html, body {
 .feature-text {
   flex: 1;
   padding: 1rem;
-  color: #ccc;
+  color: white;
 }
 
 .feature-text h3 {
-  color: #ff69b4;
+  color: white;
 }
 
 /* Stats */
@@ -330,7 +350,7 @@ html, body {
   color: #ccc;
   border-radius: 10px;
   margin-top: 12px;
-  background:  rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .faq h2 {
@@ -359,7 +379,7 @@ html, body {
   .nav {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -61px;
     height: 100vh;
     width: 70%;
     background: #000;
@@ -436,7 +456,7 @@ html, body {
   left: 0;
   background: #111;
   border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   min-width: 160px;
   z-index: 99;
 }
@@ -454,7 +474,8 @@ html, body {
 }
 
 .dropdown:hover .dropdown-content,
-.dropdown:focus-within .dropdown-content {
+.dropdown:focus-within .dropdown-content,
+.dropdown.mobile-open .dropdown-content {
   display: block;
 }
 
@@ -471,71 +492,8 @@ html, body {
     padding: 0.5rem 0;
     border-bottom: none;
   }
-}
-
-/* Dropdown (Desktop) */
-.dropdown {
-  position: relative;
-}
-
-.dropbtn {
-  background: none;
-  border: none;
-  color: #fff;
-  font: inherit;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #111;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  min-width: 160px;
-  z-index: 99;
-}
-
-.dropdown-content a {
-  display: block;
-  padding: 0.75rem 1rem;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
-}
-
-.dropdown-content a:hover {
-  background-color: #222;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Responsive dropdown toggle on mobile */
-@media (max-width: 768px) {
-  .dropdown-content {
-    display: none;
-    position: static;
-    background: none;
-    box-shadow: none;
-    padding-left: 1rem;
-  }
 
   .dropdown.mobile-open .dropdown-content {
     display: block;
   }
-
-  .dropdown-content a {
-    padding: 0.5rem 0;
-    border-bottom: none;
-  }
 }
-
-
-
-
-
