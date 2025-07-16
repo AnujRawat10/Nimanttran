@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import "./Template2.css"
+import {FaInstagram ,FaPhone, FaFacebook, FaEnvelope, FaLocationArrow, FaTwitter} from "react-icons/fa"
 import MapSection from "../../component/MapSection"
 
 const Template2 = () => {
@@ -84,9 +85,9 @@ const Template2 = () => {
           <div className="template2-person template2-groom">
             <h3>THE GROOM</h3>
             <h4>Ryan</h4>
-            <p>What can I say, she is amazing... She is my forever.</p>
+            <p>What can I say, she is amazing... She is my forever. She is my everything.</p>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              src="/groom.jpeg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
               alt="Groom"
               className="template2-person-photo"
             />
@@ -96,7 +97,7 @@ const Template2 = () => {
             <h4>Emily</h4>
             <p>I realized how much I miss him. I never wanted to be without him again!</p>
             <img
-              src="https://images.unsplash.com/photo-1494790108755-2616c9c0e8e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+              src="/bride.jpeg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
               alt="Bride"
               className="template2-person-photo"
             />
@@ -268,7 +269,7 @@ const Template2 = () => {
           </div>
           <div className="template2-gallery-img">
             <img
-              src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              src="/groom.jpeg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
               alt="Gallery 4"
             />
           </div>
@@ -299,7 +300,7 @@ const Template2 = () => {
         </div>
       </section>
 
-      <section className="template2-accommodation-section">
+      {/* <section className="template2-accommodation-section">
         <h2 className="template2-section-heading">WHERE TO STAY</h2>
         <div className="template2-accommodation-container">
           <div className="template2-hotel-card">
@@ -348,7 +349,7 @@ const Template2 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <section className="template2-gift-registry-section">
         <h2 className="template2-section-heading">GIFT REGISTRY</h2>
@@ -392,7 +393,7 @@ const Template2 = () => {
             </div>
             <div className="template2-testimonial-author">
               <img
-                src="https://images.unsplash.com/photo-1494790108755-2616c9c0e8e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                src="/bride.jpeg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
                 alt="Sarah"
               />
               <div>
@@ -447,21 +448,21 @@ const Template2 = () => {
         <div className="template2-contact-container">
           <div className="template2-contact-info">
             <h3>Contact Information</h3>
-            <p>📞 +91 98765 43210</p>
-            <p>✉️ ryanemilywedding@gmail.com</p>
-            <p>📍 Udaipur, Rajasthan</p>
+            <p> <FaPhone /> +91 9205110208</p>
+            <p><FaEnvelope /> hello@delhidigital.co</p>
+            <p><FaLocationArrow /> Delhi , India</p>
           </div>
           <div className="template2-social-media">
             <h3>Follow Our Journey</h3>
             <div className="template2-social-links">
               <a href="#" className="template2-social-link">
-                📘 Facebook
+                <FaFacebook /> Facebook
               </a>
               <a href="#" className="template2-social-link">
-                📷 Instagram
+                <FaInstagram /> Instagram
               </a>
               <a href="#" className="template2-social-link">
-                🐦 Twitter
+                <FaTwitter /> Twitter
               </a>
             </div>
           </div>

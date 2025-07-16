@@ -36,7 +36,7 @@ body {
   text-align: center;
 }
 
-.overlay {
+.overlay-template1 {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 2rem;

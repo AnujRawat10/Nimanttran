@@ -10,7 +10,8 @@ import template2 from "/assets/TEMPLATE2.png";
 import template3 from "/assets/TEMPLATE3.png";
 import filterImg from "/assets/Scanner.png";
 import galleryImg from "/assets/TEMPLATE1.png";
-import featuresImg from "/assets/WEDDING_INVITE.png";
+import MobileShowcase from "../component/MobileCarousel";
+// import featuresImg from "/assets/WEDDING_INVITE.png";
 
 
 function Home() {
@@ -107,7 +108,8 @@ function Home() {
         {/* Smart Features (Center aligned after switch) */}
         <section className="features" data-aos="fade-up">
           <div className="feature-block centered">
-            <img src={featuresImg} alt="Features" />
+            {/* <img src={featuresImg} alt="Features" /> */}
+            <MobileShowcase />
             <div className="feature-text">
               <h3>Smart Features</h3>
               <p>

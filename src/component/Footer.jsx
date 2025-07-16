@@ -2,7 +2,7 @@
 
 import { FaInstagram, FaWhatsapp, FaFacebook, FaYoutube, FaTwitter } from "react-icons/fa"
 import "./Footer.css"
-// import WhatsAppButton from "../component/WhatsAppButton"
+import WhatsAppButton from "../component/WhatsAppButton"
 
 const Footer = ({
   inviteText = "Invite your guests with a cool website invitation",
@@ -14,8 +14,8 @@ const Footer = ({
     instagram: "#",
     whatsapp: "#",
     facebook: "#",
-    youtube: "#",
-    twitter: "#",
+    // youtube: "#",
+    // twitter: "#",
   },
   quickLinks = [
     { text: "Wedding Invitation Demo", link: "#" },
@@ -32,24 +32,24 @@ const Footer = ({
   companyName = "Nimanttran",
   projectBy = "Delhi Degital Co.",
   projectByLink = "https://delhidigital.co",
-  whatsappOrderText = "Order on WhatsApp",
-  whatsappOrderLink = "https://wa.me/9205110208",
+  // whatsappOrderText = "Order on WhatsApp",
+  // whatsappOrderLink = "https://wa.me/9205110208",
 }) => {
   const handlePhoneClick = () => {
     window.open(`tel:${contactPhone}`)
   }
 
-  const handleWhatsAppOrder = () => {
-    window.open(whatsappOrderLink, "_blank")
-  }
+  // const handleWhatsAppOrder = () => {
+  //   window.open(whatsappOrderLink, "_blank")
+  // }
 
-  const handleSocialClick = (platform, link) => {
-    if (platform === "whatsapp") {
-      window.open(`https://wa.me/${contactPhone.replace(/[^0-9]/g, "")}`, "_blank")
-    } else {
-      window.open(link, "_blank")
-    }
-  }
+  // const handleSocialClick = (platform, link) => {
+  //   if (platform === "whatsapp") {
+  //     window.open(`https://wa.me/${contactPhone.replace(/[^0-9]/g, "")}`, "_blank")
+  //   } else {
+  //     window.open(link, "_blank")
+  //   }
+  // }
 
   return (
     <footer className="footer-container">
@@ -102,7 +102,7 @@ const Footer = ({
             >
               <FaFacebook />
             </a>
-            <a
+            {/* <a
               href={socialLinks.youtube}
               className="social-icon youtube"
               onClick={(e) => {
@@ -121,7 +121,7 @@ const Footer = ({
               }}
             >
               <FaTwitter />
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -170,7 +170,7 @@ const Footer = ({
             {whatsappOrderText}
           </button> */}
 
-          {/* <WhatsAppButton /> */}
+          <WhatsAppButton />
         </div>
       </div>
     </footer>
